@@ -1,0 +1,26 @@
+Report
+
+1)
+What is the time complexity of your solution? You must explain the stated
+complexity. If you have a different complexity for each problem, you need
+to discuss them separately.
+
+	Ved O-notasjon bruker algoritmen O(|V| + |E|)
+
+2)
+ What requirements are there for the input graph in order for the project
+to be successfully planned? Please put the discussion in the light of graf
+theoretical properties.
+	
+	tasksene må ikke være sykler, 
+	de må enten være frie tasks eller avhengig av hverandre i en vei som i en rekke.
+
+		ikke sånn 1 <--> 2 --> 3
+		men sånn 1 --> 2 --> 3
+	
+	riktig antall n i forhold til antall tasks
+	
+3)
+What kind of the graph algorithms did you use in your implementation?
+
+	vi brukte topologisk sorterings algoritmen for grafer og noder

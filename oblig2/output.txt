@@ -1,0 +1,912 @@
+C:\Users\William\Desktop\IN2010\oblig2>java Oblig2 inputs/buildgarage.txt
+Grafen er ferdig uten en sykel.
+
+ID: 1
+Navn: get-paperwork
+Tid: 14280
+Arbeidskraft nodvendig: 1
+Tidligste start: 0
+Seneste start: 0
+Slack: 0
+Predecessors: 2 3
+
+ID: 2
+Navn: call-contractor
+Tid: 4
+Arbeidskraft nodvendig: 1
+Tidligste start: 14280
+Seneste start: 230178
+Slack: 215898
+Predecessors: 4
+
+ID: 3
+Navn: clean-yard
+Tid: 215902
+Arbeidskraft nodvendig: 3
+Tidligste start: 14280
+Seneste start: 14280
+Slack: 0
+Predecessors: 4
+
+ID: 4
+Navn: build-foundation
+Tid: 32134
+Arbeidskraft nodvendig: 2
+Tidligste start: 230182
+Seneste start: 230182
+Slack: 0
+Predecessors: 5 6 7
+
+ID: 5
+Navn: build-wall-support
+Tid: 41232
+Arbeidskraft nodvendig: 4
+Tidligste start: 262316
+Seneste start: 262316
+Slack: 0
+Predecessors: 8 9 11
+
+ID: 6
+Navn: lay-electrical-cables
+Tid: 142
+Arbeidskraft nodvendig: 1
+Tidligste start: 262316
+Seneste start: 484771
+Slack: 222455
+Predecessors:
+
+ID: 7
+Navn: call-electrician
+Tid: 15
+Arbeidskraft nodvendig: 1
+Tidligste start: 262316
+Seneste start: 443653
+Slack: 181337
+Predecessors: 8
+
+ID: 8
+Navn: install-electrical-gate-opener
+Tid: 41245
+Arbeidskraft nodvendig: 2
+Tidligste start: 363997
+Seneste start: 443668
+Slack: 79671
+Predecessors:
+
+ID: 9
+Navn: build-walls
+Tid: 6127
+Arbeidskraft nodvendig: 4
+Tidligste start: 303548
+Seneste start: 383219
+Slack: 79671
+Predecessors: 10 13
+
+ID: 10
+Navn: add-gate
+Tid: 54322
+Arbeidskraft nodvendig: 3
+Tidligste start: 309675
+Seneste start: 389346
+Slack: 79671
+Predecessors: 8
+
+ID: 11
+Navn: build-stairs
+Tid: 4325
+Arbeidskraft nodvendig: 2
+Tidligste start: 303548
+Seneste start: 303548
+Slack: 0
+Predecessors: 12
+
+ID: 12
+Navn: add-2nd-floor
+Tid: 121478
+Arbeidskraft nodvendig: 4
+Tidligste start: 307873
+Seneste start: 307873
+Slack: 0
+Predecessors: 13
+
+ID: 13
+Navn: isolate-room
+Tid: 1242
+Arbeidskraft nodvendig: 3
+Tidligste start: 429351
+Seneste start: 429351
+Slack: 0
+Predecessors: 14
+
+ID: 14
+Navn: furnish-appartment
+Tid: 54320
+Arbeidskraft nodvendig: 2
+Tidligste start: 430593
+Seneste start: 430593
+Slack: 0
+Predecessors:
+
+Tasks startet etter tid:
+
+Tid: 0
+Start: 1
+Naavaerende ansatte: 1
+
+Tid: 14280
+Ferdig: 1
+Start: 3
+Start: 2
+Naavaerende ansatte: 4
+
+Tid: 14284
+Ferdig: 2
+Naavaerende ansatte: 3
+
+Tid: 230182
+Ferdig: 3
+Start: 4
+Naavaerende ansatte: 2
+
+Tid: 262316
+Ferdig: 4
+Start: 7
+Start: 6
+Start: 5
+Naavaerende ansatte: 6
+
+Tid: 262331
+Ferdig: 7
+Naavaerende ansatte: 5
+
+Tid: 262458
+Ferdig: 6
+Naavaerende ansatte: 4
+
+Tid: 303548
+Ferdig: 5
+Start: 11
+Start: 9
+Naavaerende ansatte: 6
+
+Tid: 307873
+Ferdig: 11
+Start: 12
+Naavaerende ansatte: 8
+
+Tid: 309675
+Ferdig: 9
+Start: 10
+Naavaerende ansatte: 7
+
+Tid: 363997
+Ferdig: 10
+Start: 8
+Naavaerende ansatte: 6
+
+Tid: 405242
+Ferdig: 8
+Naavaerende ansatte: 4
+
+Tid: 429351
+Ferdig: 12
+Start: 13
+Naavaerende ansatte: 3
+
+Tid: 430593
+Ferdig: 13
+Start: 14
+Naavaerende ansatte: 2
+
+Tid: 484913
+Ferdig: 14
+Naavaerende ansatte: 0
+
+Total tid: 484913
+
+
+
+
+
+C:\Users\William\Desktop\IN2010\oblig2>java Oblig2 inputs/buildhouse1.txt
+Grafen er ferdig uten en sykel.
+
+
+ID: 1
+Navn: Build-walls
+Tid: 4
+Arbeidskraft nodvendig: 2
+Tidligste start: 4
+Seneste start: 4
+Slack: 0
+Predecessors: 2 3
+
+ID: 2
+Navn: Build-roofs
+Tid: 6
+Arbeidskraft nodvendig: 4
+Tidligste start: 8
+Seneste start: 8
+Slack: 0
+Predecessors: 3 4 7
+
+ID: 3
+Navn: Put-on-wallpapers
+Tid: 1
+Arbeidskraft nodvendig: 2
+Tidligste start: 14
+Seneste start: 17
+Slack: 3
+Predecessors: 8
+
+ID: 4
+Navn: Put-on-tiles
+Tid: 1
+Arbeidskraft nodvendig: 3
+Tidligste start: 14
+Seneste start: 21
+Slack: 7
+Predecessors:
+
+ID: 5
+Navn: Build-foundation
+Tid: 4
+Arbeidskraft nodvendig: 2
+Tidligste start: 0
+Seneste start: 0
+Slack: 0
+Predecessors: 1 6
+
+ID: 6
+Navn: Make-floor
+Tid: 2
+Arbeidskraft nodvendig: 2
+Tidligste start: 4
+Seneste start: 12
+Slack: 8
+Predecessors: 7
+
+ID: 7
+Navn: Put-carpet-floor
+Tid: 4
+Arbeidskraft nodvendig: 2
+Tidligste start: 14
+Seneste start: 14
+Slack: 0
+Predecessors: 8
+
+ID: 8
+Navn: Move-in
+Tid: 4
+Arbeidskraft nodvendig: 4
+Tidligste start: 18
+Seneste start: 18
+Slack: 0
+Predecessors:
+
+Tasks startet etter tid:
+
+Tid: 0
+Start: 5
+Naavaerende ansatte: 2
+
+Tid: 4
+Ferdig: 5
+Start: 6
+Start: 1
+Naavaerende ansatte: 4
+
+Tid: 6
+Ferdig: 6
+Naavaerende ansatte: 2
+
+Tid: 8
+Ferdig: 1
+Start: 2
+Naavaerende ansatte: 4
+
+Tid: 14
+Ferdig: 2
+Start: 7
+Start: 4
+Start: 3
+Naavaerende ansatte: 7
+
+Tid: 15
+Ferdig: 4
+Ferdig: 3
+Naavaerende ansatte: 2
+
+Tid: 18
+Ferdig: 7
+Start: 8
+Naavaerende ansatte: 4
+
+Tid: 22
+Ferdig: 8
+Naavaerende ansatte: 0
+
+Total tid: 22
+
+
+
+
+C:\Users\William\Desktop\IN2010\oblig2>java Oblig2 inputs/buildhouse2.txt
+
+Stopper fordi det er er sykel.
+
+Tasks i sykelen:
+Task: 1
+Task: 2
+Task: 6
+Task: 7
+
+
+
+
+
+C:\Users\William\Desktop\IN2010\oblig2>java Oblig2 inputs/examplefigure.txt
+Grafen er ferdig uten en sykel.
+
+
+ID: 1
+Navn: 1
+Tid: 3
+Arbeidskraft nodvendig: 4
+Tidligste start: 0
+Seneste start: 3
+Slack: 3
+Predecessors: 3
+
+ID: 2
+Navn: 2
+Tid: 5
+Arbeidskraft nodvendig: 2
+Tidligste start: 0
+Seneste start: 0
+Slack: 0
+Predecessors: 3 4
+
+ID: 3
+Navn: 3
+Tid: 1
+Arbeidskraft nodvendig: 2
+Tidligste start: 5
+Seneste start: 6
+Slack: 1
+Predecessors: 5 6
+
+ID: 4
+Navn: 4
+Tid: 2
+Arbeidskraft nodvendig: 4
+Tidligste start: 5
+Seneste start: 5
+Slack: 0
+Predecessors: 6
+
+ID: 5
+Navn: 5
+Tid: 4
+Arbeidskraft nodvendig: 3
+Tidligste start: 6
+Seneste start: 11
+Slack: 5
+Predecessors: 7
+
+ID: 6
+Navn: 6
+Tid: 8
+Arbeidskraft nodvendig: 4
+Tidligste start: 7
+Seneste start: 7
+Slack: 0
+Predecessors: 7 8
+
+ID: 7
+Navn: 7
+Tid: 3
+Arbeidskraft nodvendig: 2
+Tidligste start: 15
+Seneste start: 15
+Slack: 0
+Predecessors:
+
+ID: 8
+Navn: 8
+Tid: 1
+Arbeidskraft nodvendig: 3
+Tidligste start: 15
+Seneste start: 17
+Slack: 2
+Predecessors:
+
+Tasks startet etter tid:
+
+Tid: 0
+Start: 2
+Start: 1
+Naavaerende ansatte: 6
+
+Tid: 3
+Ferdig: 1
+Naavaerende ansatte: 2
+
+Tid: 5
+Ferdig: 2
+Start: 4
+Start: 3
+Naavaerende ansatte: 6
+
+Tid: 6
+Ferdig: 3
+Start: 5
+Naavaerende ansatte: 7
+
+Tid: 7
+Ferdig: 4
+Start: 6
+Naavaerende ansatte: 7
+
+Tid: 10
+Ferdig: 5
+Naavaerende ansatte: 4
+
+Tid: 15
+Ferdig: 6
+Start: 8
+Start: 7
+Naavaerende ansatte: 5
+
+Tid: 16
+Ferdig: 8
+Naavaerende ansatte: 2
+
+Tid: 18
+Ferdig: 7
+Naavaerende ansatte: 0
+
+Total tid: 18
+
+
+
+
+
+
+C:\Users\William\Desktop\IN2010\oblig2>java Oblig2 inputs/buildrail.txt
+Grafen er ferdig uten en sykel.
+
+
+ID: 1
+Navn: Install-pavement
+Tid: 20
+Arbeidskraft nodvendig: 10
+Tidligste start: 186
+Seneste start: 198
+Slack: 12
+Predecessors:
+
+ID: 2
+Navn: Install-railing
+Tid: 7
+Arbeidskraft nodvendig: 10
+Tidligste start: 5
+Seneste start: 211
+Slack: 206
+Predecessors:
+
+ID: 3
+Navn: Install-ticketmachine
+Tid: 1
+Arbeidskraft nodvendig: 10
+Tidligste start: 63
+Seneste start: 217
+Slack: 154
+Predecessors:
+
+ID: 4
+Navn: Paint-tower-1-with-arch
+Tid: 15
+Arbeidskraft nodvendig: 6
+Tidligste start: 119
+Seneste start: 203
+Slack: 84
+Predecessors:
+
+ID: 5
+Navn: Paint-tower-2
+Tid: 12
+Arbeidskraft nodvendig: 6
+Tidligste start: 124
+Seneste start: 206
+Slack: 82
+Predecessors:
+
+ID: 6
+Navn: Paint-trusses
+Tid: 27
+Arbeidskraft nodvendig: 6
+Tidligste start: 186
+Seneste start: 191
+Slack: 5
+Predecessors:
+
+ID: 7
+Navn: Paint-cables-and-rods
+Tid: 18
+Arbeidskraft nodvendig: 6
+Tidligste start: 186
+Seneste start: 200
+Slack: 14
+Predecessors:
+
+ID: 8
+Navn: Put-lane-tunnel-and-intersection
+Tid: 12
+Arbeidskraft nodvendig: 7
+Tidligste start: 51
+Seneste start: 194
+Slack: 143
+Predecessors: 3 31
+
+ID: 9
+Navn: Setup-barrack
+Tid: 3
+Arbeidskraft nodvendig: 10
+Tidligste start: 0
+Seneste start: 0
+Slack: 0
+Predecessors: 10 11 12 14 16 17
+
+ID: 10
+Navn: Prepare-storage
+Tid: 2
+Arbeidskraft nodvendig: 4
+Tidligste start: 3
+Seneste start: 209
+Slack: 206
+Predecessors: 2
+
+ID: 11
+Navn: Rig-ramspace-reinforcing
+Tid: 1
+Arbeidskraft nodvendig: 4
+Tidligste start: 3
+Seneste start: 8
+Slack: 5
+Predecessors: 18 19 20
+
+ID: 12
+Navn: Build-tunnel
+Tid: 30
+Arbeidskraft nodvendig: 12
+Tidligste start: 3
+Seneste start: 146
+Slack: 143
+Predecessors: 13
+
+ID: 13
+Navn: Clean-tunnel
+Tid: 18
+Arbeidskraft nodvendig: 12
+Tidligste start: 33
+Seneste start: 176
+Slack: 143
+Predecessors: 8
+
+ID: 14
+Navn: Build-intersection
+Tid: 25
+Arbeidskraft nodvendig: 12
+Tidligste start: 3
+Seneste start: 149
+Slack: 146
+Predecessors: 15
+
+ID: 15
+Navn: Clean-intersection
+Tid: 20
+Arbeidskraft nodvendig: 12
+Tidligste start: 28
+Seneste start: 174
+Slack: 146
+Predecessors: 8
+
+ID: 16
+Navn: Build-towerfoundation-1
+Tid: 35
+Arbeidskraft nodvendig: 12
+Tidligste start: 3
+Seneste start: 14
+Slack: 11
+Predecessors: 21
+
+ID: 17
+Navn: Build-towerfoundation-2
+Tid: 45
+Arbeidskraft nodvendig: 12
+Tidligste start: 3
+Seneste start: 3
+Slack: 0
+Predecessors: 22
+
+ID: 18
+Navn: Make-armouring-tower-1
+Tid: 40
+Arbeidskraft nodvendig: 4
+Tidligste start: 4
+Seneste start: 9
+Slack: 5
+Predecessors: 21
+
+ID: 19
+Navn: Make-armouring-tower-2
+Tid: 25
+Arbeidskraft nodvendig: 4
+Tidligste start: 4
+Seneste start: 23
+Slack: 19
+Predecessors: 22
+
+ID: 20
+Navn: Make-armouring-arch
+Tid: 12
+Arbeidskraft nodvendig: 4
+Tidligste start: 4
+Seneste start: 144
+Slack: 140
+Predecessors: 23
+
+ID: 21
+Navn: Encase-and-armour-tower-1
+Tid: 15
+Arbeidskraft nodvendig: 5
+Tidligste start: 44
+Seneste start: 49
+Slack: 5
+Predecessors: 24
+
+ID: 22
+Navn: Encase-and-armour-tower-2
+Tid: 16
+Arbeidskraft nodvendig: 5
+Tidligste start: 48
+Seneste start: 48
+Slack: 0
+Predecessors: 25
+
+ID: 23
+Navn: Encase-and-armour-arch
+Tid: 30
+Arbeidskraft nodvendig: 5
+Tidligste start: 16
+Seneste start: 156
+Slack: 140
+Predecessors: 26
+
+ID: 24
+Navn: Cast-tower-1
+Tid: 60
+Arbeidskraft nodvendig: 7
+Tidligste start: 59
+Seneste start: 64
+Slack: 5
+Predecessors: 4 27
+
+ID: 25
+Navn: Cast-tower-2
+Tid: 60
+Arbeidskraft nodvendig: 7
+Tidligste start: 64
+Seneste start: 64
+Slack: 0
+Predecessors: 5 27
+
+ID: 26
+Navn: Cast-arch
+Tid: 20
+Arbeidskraft nodvendig: 7
+Tidligste start: 46
+Seneste start: 186
+Slack: 140
+Predecessors: 31
+
+ID: 27
+Navn: Stretch-two-maincables
+Tid: 25
+Arbeidskraft nodvendig: 10
+Tidligste start: 124
+Seneste start: 124
+Slack: 0
+Predecessors: 28 29
+
+ID: 28
+Navn: Build-truss-1-with-rods
+Tid: 30
+Arbeidskraft nodvendig: 10
+Tidligste start: 149
+Seneste start: 156
+Slack: 7
+Predecessors: 1 6 7 30
+
+ID: 29
+Navn: Build-truss-2-with-rods
+Tid: 37
+Arbeidskraft nodvendig: 10
+Tidligste start: 149
+Seneste start: 149
+Slack: 0
+Predecessors: 1 6 7 30
+
+ID: 30
+Navn: Cast-lane-on-truss
+Tid: 20
+Arbeidskraft nodvendig: 7
+Tidligste start: 186
+Seneste start: 186
+Slack: 0
+Predecessors: 31
+
+ID: 31
+Navn: Polish-lane-on-arch
+Tid: 12
+Arbeidskraft nodvendig: 7
+Tidligste start: 206
+Seneste start: 206
+Slack: 0
+Predecessors:
+
+Tasks startet etter tid:
+
+Tid: 0
+Start: 9
+Naavaerende ansatte: 10
+
+Tid: 3
+Ferdig: 9
+Start: 17
+Start: 16
+Start: 14
+Start: 12
+Start: 11
+Start: 10
+Naavaerende ansatte: 56
+
+Tid: 4
+Ferdig: 11
+Start: 20
+Start: 19
+Start: 18
+Naavaerende ansatte: 64
+
+Tid: 5
+Ferdig: 10
+Start: 2
+Naavaerende ansatte: 70
+
+Tid: 12
+Ferdig: 2
+Naavaerende ansatte: 60
+
+Tid: 16
+Ferdig: 20
+Start: 23
+Naavaerende ansatte: 61
+
+Tid: 28
+Ferdig: 14
+Start: 15
+Naavaerende ansatte: 61
+
+Tid: 29
+Ferdig: 19
+Naavaerende ansatte: 57
+
+Tid: 33
+Ferdig: 12
+Start: 13
+Naavaerende ansatte: 57
+
+Tid: 38
+Ferdig: 16
+Naavaerende ansatte: 45
+
+Tid: 44
+Ferdig: 18
+Start: 21
+Naavaerende ansatte: 46
+
+Tid: 46
+Ferdig: 23
+Start: 26
+Naavaerende ansatte: 48
+
+Tid: 48
+Ferdig: 17
+Ferdig: 15
+Start: 22
+Naavaerende ansatte: 29
+
+Tid: 51
+Ferdig: 13
+Start: 8
+Naavaerende ansatte: 24
+
+Tid: 59
+Ferdig: 21
+Start: 24
+Naavaerende ansatte: 26
+
+Tid: 63
+Ferdig: 8
+Start: 3
+Naavaerende ansatte: 29
+
+Tid: 64
+Ferdig: 3
+Ferdig: 22
+Start: 25
+Naavaerende ansatte: 21
+
+Tid: 66
+Ferdig: 26
+Naavaerende ansatte: 14
+
+Tid: 119
+Ferdig: 24
+Start: 4
+Naavaerende ansatte: 13
+
+Tid: 124
+Ferdig: 25
+Start: 5
+Start: 27
+Naavaerende ansatte: 22
+
+Tid: 134
+Ferdig: 4
+Naavaerende ansatte: 16
+
+Tid: 136
+Ferdig: 5
+Naavaerende ansatte: 10
+
+Tid: 149
+Ferdig: 27
+Start: 29
+Start: 28
+Naavaerende ansatte: 20
+
+Tid: 179
+Ferdig: 28
+Naavaerende ansatte: 10
+
+Tid: 186
+Ferdig: 29
+Start: 30
+Start: 7
+Start: 6
+Start: 1
+Naavaerende ansatte: 29
+
+Tid: 204
+Ferdig: 7
+Naavaerende ansatte: 23
+
+Tid: 206
+Ferdig: 30
+Start: 31
+Ferdig: 1
+Naavaerende ansatte: 13
+
+Tid: 213
+Ferdig: 6
+Naavaerende ansatte: 7
+
+Tid: 218
+Ferdig: 31
+Naavaerende ansatte: 0
+
+Total tid: 218
+
+C:\Users\William\Desktop\IN2010\oblig2>
